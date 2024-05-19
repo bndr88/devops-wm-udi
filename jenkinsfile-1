@@ -6,22 +6,5 @@ pipeline {
                  echo "${BUILD_NUMBER}"
             }
         }
-
-        stage('Stage-2') {
-            steps {
-                script{
-                    sh "docker version"
-                }
-            }
-        }
-
-        stage('Stage-3') {
-            steps {
-                script{
-                    sh "git version"
-                }
-            }
-        }
-
     }
 }
