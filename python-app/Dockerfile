@@ -1,3 +1,8 @@
+FROM python:latest
+
+# Directorio principal de trabajo
+RUN mkdir /app
+WORKDIR /app
 
 # Copiamos los archivos a nuestro directorio principal de trabajo
 ADD . /app/
